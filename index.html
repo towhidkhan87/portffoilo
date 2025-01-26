@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager - Towhid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="image/Towhid.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .slide-in-lg {
+                animation: slide-in 3s forwards;
+            }
+        }
+        @keyframes slide-up {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .slide-up-lg {
+                animation: slide-up 3s forwards;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div class="fixed top-0 left-0 w-full bg-white z-50 border-b-2 border-gray-300">
+            <div class="flex justify-between items-center w-11/12 mx-auto py-5">
+                <img class="w-20 h-20 rounded-full" src="image/Towhid.png">
+                <div class="flex justify-between items-center gap-5 lg:gap-20 py-5">
+                    <nav class="hidden lg:flex gap-20">
+                        <p class="hover:text-red-500 cursor-pointer">Home</p>
+                        <p class="hover:text-red-500 cursor-pointer">About Me</p>
+                        <p class="hover:text-red-500 cursor-pointer">Portfolio</p>
+                        <p class="hover:text-red-500 cursor-pointer">Contact</p>
+                    </nav>
+                    <button class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Hire Me</button>
+                    <i class="fa-solid fa-bars-staggered fa-2xl lg:hidden"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mt-32 flex flex-col lg:flex-row justify-between items-center w-11/12 mx-auto py-5 lg:w-9/12">
+            <div class="lg:w-1/2 slide-in-lg">
+                <h3 class="text-xl text-center lg:text-left">Hi, I am</h3>
+                <h1 class="lg:text-4xl text-2xl text-center font-semibold lg:text-left">Mohammad <span class="text-red-500">Towhidur</span> Rahman Khan</h1>
+                <p class="text-center py-5 lg:text-left">I am a professional product manager with 5 years of experience in the field.
+                    I have worked with some of the top companies in the world and have helped them to grow their
+                    business
+                    exponentially. I have a strong understanding of the market and can help you to take your business to
+                    the
+                    next level.</p>
+                <div class="flex justify-center lg:justify-start items-center gap-5 py-5">
+                    <button class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Hire Me</button>
+                    <button class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Download CV</button>
+                </div>
+            </div>
+            <div class="slide-up-lg">
+                <img src="image/Towhid.png" class="w-96 rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex justify-center items-center flex-col gap-5 border-t-2 border-gray-300 py-5">
+            <img src="image/Towhid.png" class="w-20 h-20 rounded-full">
+            <p>Mohammad Towhidur Rahman Khan</p>
+            <p>Product Manager</p>
+            <p>Copyright - 2025 - ALL RIGHTS RESERVED</p>
+            <div class="flex gap-5 py-5">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <i class="fa-brands fa-square-instagram fa-2xl"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
