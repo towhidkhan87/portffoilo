@@ -28,6 +28,7 @@
                 animation: slide-in 3s forwards;
             }
         }
+
         @keyframes slide-up {
             from {
                 transform: translateY(100%);
@@ -45,8 +46,26 @@
                 animation: slide-up 3s forwards;
             }
         }
+
+        @keyframes slide-in-right {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .slide-in-right-lg {
+                animation: slide-in-right 5s forwards;
+            }
+        }
     </style>
-    
+
 </head>
 
 <body>
@@ -61,7 +80,9 @@
                         <p class="hover:text-red-500 cursor-pointer">Portfolio</p>
                         <p class="hover:text-red-500 cursor-pointer">Contact</p>
                     </nav>
-                    <button class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Hire Me</button>
+                    <button
+                        class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Hire
+                        Me</button>
                     <i class="fa-solid fa-bars-staggered fa-2xl lg:hidden"></i>
                 </div>
             </div>
@@ -71,21 +92,42 @@
         <div class="mt-32 flex flex-col lg:flex-row justify-between items-center w-11/12 mx-auto py-5 lg:w-9/12">
             <div class="lg:w-1/2 slide-in-lg">
                 <h3 class="text-xl text-center lg:text-left">Hi, I am</h3>
-                <h1 class="lg:text-4xl text-2xl text-center font-semibold lg:text-left">Mohammad <span class="text-red-500">Towhidur</span> Rahman Khan</h1>
-                <p class="text-center py-5 lg:text-left">I am a professional product manager with 5 years of experience in the field.
+                <h1 class="lg:text-4xl text-2xl text-center font-semibold lg:text-left">Mohammad <span
+                        class="text-red-500">Towhidur</span> Rahman Khan</h1>
+                <p class="text-center py-5 lg:text-left">I am a professional product manager with 5 years of experience
+                    in the field.
                     I have worked with some of the top companies in the world and have helped them to grow their
                     business
                     exponentially. I have a strong understanding of the market and can help you to take your business to
                     the
                     next level.</p>
+                <p class="font-medium text-center lg:text-left">BEST SKILL ON</p>
+                <div class="flex gap-5 w-16 py-5 justify-center mx-auto lg:justify-start lg:mx-0">
+                    <img src="image/figma.png" class="rounded-lg bg-gray-100 shadow-xl p-2">
+                    <img src="image/js (1).png" class="rounded-lg bg-gray-100 shadow-xl p-2">
+                    <img src="image/physics.png" class="rounded-lg bg-gray-100 shadow-xl p-2">
+                </div>
                 <div class="flex justify-center lg:justify-start items-center gap-5 py-5">
-                    <button class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Hire Me</button>
-                    <button class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Download CV</button>
+                    <button
+                        class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Hire
+                        Me</button>
+                    <button
+                        class="rounded-lg bg-gray-100 px-8 py-4 text-red-500 shadow-lg transform hover:translate-y-1 hover:shadow-sm transition hover:bg-red-500 hover:text-white hover:font-semibold">Download
+                        CV</button>
                 </div>
             </div>
             <div class="slide-up-lg">
                 <img src="image/Towhid.png" class="w-96 rounded-lg shadow-2xl">
             </div>
+        </div>
+        <div
+            class="flex flex-col lg:flex-row justify-between items-center w-11/12 mx-auto py-5 lg:w-9/12 slide-in-right-lg">
+            <img src="image/aust_logo.svg" class="w-40 h-40 mx-auto py-5">
+            <img src="image/BBF-LOGO.png" class="w-40 h-40 mx-auto py-5">
+            <img src="image/Interspeed_logo_menu_5.png" class="w-40 h-40 mx-auto py-5">
+            <img src="image/SCB_logo.png" class="w-40 h-40 mx-auto py-5">
+            <img src="image/logo_uce.jpg" class="w-40 h-40 mx-auto py-5">
+            <img src="image/logo_Nwave.jpg" class="w-40 h-40 mx-auto py-5">
         </div>
     </main>
     <footer>
